@@ -1,6 +1,5 @@
 :root {
     --primary-color: #08A6E4;
-    --primary-shadow-color: rgba(7, 172, 230, .16);
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F7F7F7;
     --primary-font-color: #000000;
@@ -21,4 +20,51 @@
     margin: 0 auto;
 }
 
+.header {
+    width: 100vw;
+    height: 70px;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0 3px 6px #00000029;
+}
 
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo {
+    font-family: var(--raleway-font);
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 37px;
+    color: var(--primary-color);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__link {
+    font-family: var(--open-sans-font);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-align: center;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    padding: 28px 10px 23px;
+    margin: 37px;
+}
+
+.header__nav__link:hover {
+    color: var(--primary-font-color);
+    border-bottom: 4px solid var(--primary-color);
+    box-sizing: content-box;
+}
