@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #08A6E4;
+    --primary-shadow-color: rgba(7, 172, 230, .16);
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F7F7F7;
+    --primary-font-color: #000000;
+    --secondary-font-color: #A5A5A5;
+    --redish-color: #FB3B64;
+    --green-color: #55DFB4;
+    --raleway-font: "Raleway", sans-serif;
+    --open-sans-font: "Open Sans", sans-serif;
+    --button-radius: 35px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+
