@@ -81,7 +81,7 @@
 
 }
 
-.opening__header {
+.opening__heading {
     font-family: var(--raleway-font);
     font-size: 3.6875rem;
     text-align: center;
@@ -115,3 +115,93 @@
     align-self: center;
     width: 100%
 }
+
+.statistics__heading {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-align: center;
+    font-family: var(--raleway-font);
+    padding: 100px 0;
+}
+
+.statistics__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0 100px 120px 100px;
+}
+
+.statistics__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circle {
+    height: 62.71px;
+    width: 62.71px;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 14px;
+}
+
+.red {
+    background-color: var(--redish-color);
+}
+.blue {
+    background-color: var(--primary-color);
+}
+.green {
+    background-color: var(--green-color);
+}
+
+div.red::after {
+    content: url("../Assets/Person.svg");
+    height: 52px;
+    width: 44px;
+    position: relative;
+    left: 20px;
+    top: 4px;
+}
+
+div.blue::after {
+    content: url("../Assets/Eye.svg");
+    height: 52px;
+    width: 44px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+
+div.green::after {
+    content: url("../Assets/Catalog.svg");
+    height: 52px;
+    width: 44px;
+    position: relative;
+    left: 25px;
+    top: 5px;
+}
+
+.statistics__number {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 5.96px;
+    font-family: var(--raleway-font);
+    font-weight: 800;
+    padding-bottom: 19.11px;
+}
+
+.statistics__description {
+    font-size: 1.0625rem;
+    font-family: var(--open-sans-font);
+    line-height: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--secondary-font-color);
+
+}
+
