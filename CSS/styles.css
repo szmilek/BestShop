@@ -350,3 +350,112 @@ div.green::after {
     height: auto;
     margin-top: 55px;
 }
+
+.pricing {
+    background-color: var(--primary-bg-color);
+    margin: 100px 0 150px 0;
+}
+
+.pricing__header {
+    font-family: var(--raleway-font);
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__box {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--pricing-accent);
+    border-radius: 18px;
+}
+
+.box__heading {
+    font-family: var(--raleway-font);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 34px 160px 14px 160px;
+}
+
+.box__price {
+    font-family: var(--open-sans-font);
+    font-weight: 300;
+    font-size: 2.875rem;
+    padding-bottom: 5px;
+    line-height: 2;
+    color: var(--pricing-accent);
+}
+
+.box__limited {
+    font-size: 0.75rem;
+    font-family: var(--raleway-font);
+    font-weight: 700;
+}
+
+.box__list {
+    margin: 60px 0 0 0;
+}
+
+.box__list__element {
+    padding-bottom: 20px;
+    font-family: var(--open-sans-font);
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.box__list__element::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../Assets/Checkmark-1.svg");
+}
+
+.box__list__element--not::before {
+    background-image: url("../Assets/CLose.svg");
+}
+
+.box__btn {
+    font-family: var(--open-sans-font);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    background-color: var(--pricing-accent);
+    color: var(--primary-bg-color);
+    text-decoration: none;
+    padding: 16px 67px;
+    border-radius: 23px;
+    position: relative;
+    bottom: -25px;
+}
+
+.pricing__box--basic {
+    --pricing-accent: var(--redish-color);
+    margin: 20px 0;
+}
+
+.pricing__box--professional {
+    width: 400px;
+    --pricing-accent: var(--primary-color);
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing__box--professional .box__list__element {
+    padding-bottom: 26px;
+}
+
+.pricing__box--premium {
+    --pricing-accent: var(--green-color);
+    margin: 20px 0;
+}
