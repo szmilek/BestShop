@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <div class="header__content container">
             <div class="header__logo">BestShop</div>
             <nav>
@@ -36,7 +36,7 @@
                 </ul>
             </nav>
         </div>
-    </section>
+    </header>
     <section class="opening container">
         <h1 class="opening__heading">Sell More!</h1>
         <p class="opening__description">Open shop on our platform and increase your sales</p>
@@ -144,5 +144,57 @@
             </div>
         </div>
     </section>
+    <section class="contact">
+        <div class="contact__container container">
+            <div class="contact__info">
+                <h3 class="contact__heading">Any questions?</h3>
+                <p class="contact__description">Leave your email address or call us!</p>
+                <div class="contact__details">
+                    <a href="mailto:info@bestshop.xyz" class="contact__email">
+                        <img src="Assets/Mail Icon.svg" alt="mail"/>
+                        info@bestshop.xyz
+                    </a>
+                    <a href="tel:123456789" class="contact__number">
+                        <img src="Assets/Phone Icon.svg" alt="phone"/>
+                        123 456 789
+                    </a>
+                </div>
+            </div>
+            <div class="contact__info">
+                <form class="form">
+                    <div class="form__fields">
+                        <label class="form__label" for="name">NAME</label>
+                        <input type="text" class="form__name" id="name">
+                    </div>
+                    <div class="form__fields">
+                        <label class="form__label" for="email">EMAIL</label>
+                        <input type="email" class="form__email" id="email">
+                    </div>
+                    <div class="form__consent">
+                        <label class="checkbox checkbox__label">
+                            <input type="checkbox">
+                            <span></span>
+                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                        </label>
+                    </div>
+                    <button class="form__btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+            <div class="footer__info">
+                <div class="footer__logo">BestShop</div>
+                <div class="footer__copyrights">© 2019 BestShop LTD, All Rights Reserved</div>
+            </div>
+            <div class="footer__icons">
+                <a href="">
+                    <img src="Assets/Twitter.svg" alt="twitter">
+                </a>
+                <a href="">
+                    <img src="Assets/Facebook.svg" alt="facebook">
+                </a>
+            </div>
+    </footer>
 </body>
 </html>
